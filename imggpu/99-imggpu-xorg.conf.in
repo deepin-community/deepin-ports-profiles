@@ -1,0 +1,6 @@
+Section "Device"
+        Identifier "imggpu"
+        Driver "KMSDRI"
+        Option "UseGammaLUT" "false"
+        Option "kmsdev" "KMSDEV"
+EndSection

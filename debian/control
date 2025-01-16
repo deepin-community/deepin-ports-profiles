@@ -1,0 +1,96 @@
+Source: deepin-ports-profiles
+Section: metapackages
+Priority: standard
+Maintainer: LinuxDeepin Project <linuxdeepin@linuxdeepin.com>
+Build-Depends: debhelper (>= 8.0.0),
+               debhelper-compat (= 13),
+Standards-Version: 3.9.3
+Homepage: https://github.com/deepin-community/deepin-ports-profiles
+
+Package: deepin-ports-profile-jh7110
+Architecture: all
+Depends: ${misc:Depends},
+         firmware-jh7110-vpu,
+         jh7110-vpu-bin,
+         deepin-ports-profile-gpu-ddk119,
+Description: deepin ports SIG profile for jh7110
+
+Package: deepin-ports-profile-sg2042
+Architecture: all
+Depends: ${misc:Depends},
+Description: deepin ports SIG profile for sg2042
+
+Package: deepin-ports-profile-th1520
+Architecture: all
+Depends: ${misc:Depends},
+         xserver-xorg-video-thead,
+         th1520-boot-firmware,
+         th1520-vendor-opensbi,
+         th1520-npu,
+         th1520-vpu,
+         aic8800-firmware,
+         rtl8723ds-firmware,
+         deepin-ports-profile-gpu-ddk117,
+Description: deepin ports SIG profile for th1520
+
+Package: deepin-ports-profile-k1
+Architecture: all
+Depends: ${misc:Depends},
+         spacemit-uart-bt,
+         spacemit-flash-dtbs,
+         deepin-ports-profile-gpu-ddk232,
+Description: deepin ports SIG profile for k1
+
+Package: deepin-ports-profile-eic7700
+Architecture: all
+Depends: ${misc:Depends},
+         deepin-ports-profile-gpu-ddk118,
+Description: deepin ports SIG profile for eic7700
+
+Package: deepin-ports-profile-gpu-ddk117
+Architecture: all
+Depends: ${misc:Depends},
+         firmware-imggpu-ddk117,
+         img-gpu-bin-ddk117,
+         libegl-pvr0-ddk117,
+         libgbm1-pvr-ddk117,
+         libgl1-pvr-dri-ddk117,
+         libglapi-pvr-ddk117,
+         xserver-xorg-video-pvrdri,
+Description: deepin ports SIG profile for GPU DDK117
+
+Package: deepin-ports-profile-gpu-ddk118
+Architecture: all
+Depends: ${misc:Depends},
+         firmware-imggpu-ddk118,
+         img-gpu-bin-ddk118,
+         libegl-pvr0-ddk118,
+         libgbm1-pvr-ddk118,
+         libgl1-pvr-dri-ddk118,
+         libglapi-pvr-ddk118,
+         xserver-xorg-video-pvrdri,
+Description: deepin ports SIG profile for GPU DDK118
+
+Package: deepin-ports-profile-gpu-ddk119
+Architecture: all
+Depends: ${misc:Depends},
+         firmware-imggpu-ddk119,
+         img-gpu-bin-ddk119,
+         libegl-pvr0-ddk119,
+         libgbm1-pvr-ddk119,
+         libgl1-pvr-dri-ddk119,
+         libglapi-pvr-ddk119,
+         xserver-xorg-video-pvrdri,
+Description: deepin ports SIG profile for GPU DDK119
+
+Package: deepin-ports-profile-gpu-ddk232
+Architecture: all
+Depends: ${misc:Depends},
+         firmware-imggpu-ddk232,
+         img-gpu-bin-ddk232,
+         libegl-pvr0-ddk232,
+         libgbm1-pvr-ddk232,
+         libgl1-pvr-dri-ddk232,
+         libglapi-pvr-ddk232,
+         xserver-xorg-video-pvrdri,
+Description: deepin ports SIG profile for GPU DDK232

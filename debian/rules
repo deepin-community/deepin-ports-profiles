@@ -1,0 +1,49 @@
+#!/usr/bin/make -f
+
+PKG_PFX = deepin-ports-profile-
+
+ALL_DEVICES = eic7700 jh7110 k1 sg2042 th1520
+
+IMG_DEVICES = eic7700 jh7110 k1 th1520
+
+IMG_DDK_LIST = 117 118 119 232
+
+%:
+	dh $@
+
+override_dh_install:
+
+	for ddkver in $(IMG_DDK_LIST) ; do \
+		install -Dm644 imggpu/99-imggpu-env.conf -t debian/$(PKG_PFX)gpu-ddk$$ddkver/etc/environment.d/; \
+		install -Dm644 imggpu/99-imggpu-modload.conf -t debian/$(PKG_PFX)gpu-ddk$$ddkver/etc/modules-load.d/; \
+	done
+
+	for pf in $(ALL_DEVICES) ; do \
+		install -Dm644 disable-hibernate/disable-hibernate.conf -t debian/$(PKG_PFX)$$pf/etc/systemd/logind.conf.d/; \
+		install -Dm644 disable-evbug/disable-evbug.conf -t debian/$(PKG_PFX)$$pf/etc/modprobe.d/; \
+	done
+
+	for pf in $(IMG_DEVICES) ; do \
+		install -Dm644 imggpu/99-imggpu-xorg.conf.in debian/$(PKG_PFX)$$pf/etc/X11/xorg.conf.d/99-imggpu-xorg.conf; \
+		if [ "$$pf" = "eic7700" ] || [ "$$pf" = "th1520" ]; then \
+			sed -i 's@KMSDEV@/dev/dri/card0@' debian/$(PKG_PFX)$$pf/etc/X11/xorg.conf.d/99-imggpu-xorg.conf; \
+		else \
+			sed -i 's@KMSDEV@/dev/dri/card1@' debian/$(PKG_PFX)$$pf/etc/X11/xorg.conf.d/99-imggpu-xorg.conf; \
+		fi; \
+		if [ "$$pf" = "th1520" ]; then \
+			sed -i 's@KMSDRI@thead@' debian/$(PKG_PFX)$$pf/etc/X11/xorg.conf.d/99-imggpu-xorg.conf; \
+		else \
+			sed -i 's@KMSDRI@pvrdri@' debian/$(PKG_PFX)$$pf/etc/X11/xorg.conf.d/99-imggpu-xorg.conf; \
+		fi; \
+	done
+
+	install -Dm644 profiles/eic7700/fix-eth.conf -t debian/$(PKG_PFX)eic7700/etc/modprobe.d/
+	install -Dm644 profiles/eic7700/99-fix-gamma.conf -t debian/$(PKG_PFX)eic7700/etc/X11/xorg.conf.d/
+	install -Dm644 profiles/eic7700/eswin-codecs.rules -t debian/$(PKG_PFX)eic7700/etc/udev/rules.d/
+
+	install -Dm644 profiles/jh7110/jh7110-codecs.rules -t debian/$(PKG_PFX)jh7110/etc/udev/rules.d/
+
+	install -Dm755 profiles/k1/copy-spacemit-firmware -t debian/$(PKG_PFX)k1/etc/initramfs-tools/hooks/
+
+	install -Dm755 profiles/sg2042/sg2042-extgpu.conf -t debian/$(PKG_PFX)sg2042/etc/modprobe.d/
+	install -Dm755 profiles/sg2042/99-primarygpu.conf -t debian/$(PKG_PFX)sg2042/etc/X11/xorg.conf.d/
