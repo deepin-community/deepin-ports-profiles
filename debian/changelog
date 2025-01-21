@@ -1,3 +1,9 @@
+deepin-ports-profiles (2025.01.21) unstable; urgency=medium
+
+  * fix for wayland and x11 env
+
+ -- Chang Yang <yangchang@deepin.org>  Tue, 21 Jan 2025 16:42:07 +0800
+
 deepin-ports-profiles (2025.01.16) unstable; urgency=medium
 
   * init package

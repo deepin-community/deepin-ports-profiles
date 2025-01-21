@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export QT_QUICK_BACKEND=software
+export KWIN_COMPOSE=O2ES
+export QT_XCB_GL_INTEGRATION=xcb_egl

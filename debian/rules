@@ -14,7 +14,7 @@ IMG_DDK_LIST = 117 118 119 232
 override_dh_install:
 
 	for ddkver in $(IMG_DDK_LIST) ; do \
-		install -Dm644 imggpu/99-imggpu-env.conf -t debian/$(PKG_PFX)gpu-ddk$$ddkver/etc/environment.d/; \
+		install -Dm755 imggpu/99-imggpu-env -t debian/$(PKG_PFX)gpu-ddk$$ddkver/etc/X11/Xsession.d/; \
 		install -Dm644 imggpu/99-imggpu-modload.conf -t debian/$(PKG_PFX)gpu-ddk$$ddkver/etc/modules-load.d/; \
 	done
 
