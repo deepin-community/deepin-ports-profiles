@@ -1,3 +1,10 @@
+deepin-ports-profiles (2025.02.24.1) unstable; urgency=medium
+
+  * add u-boot-menu dependency
+  * add unmatched profile
+
+ -- Chang Yang <yangchang@deepin.org>  Mon, 24 Feb 2025 16:01:30 +0800
+
 deepin-ports-profiles (2025.02.24) unstable; urgency=medium
 
   * use ddk242 for eic7700

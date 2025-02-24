@@ -7,17 +7,28 @@ Build-Depends: debhelper (>= 8.0.0),
 Standards-Version: 3.9.3
 Homepage: https://github.com/deepin-community/deepin-ports-profiles
 
+Package: deepin-ports-profile-unmatched
+Architecture: all
+Depends: ${misc:Depends},
+         u-boot-menu,
+         initramfs-tools,
+Description: deepin ports SIG profile for unmatched
+
 Package: deepin-ports-profile-jh7110
 Architecture: all
 Depends: ${misc:Depends},
          firmware-jh7110-vpu,
          jh7110-vpu-bin,
          deepin-ports-profile-gpu-ddk119,
+         u-boot-menu,
+         initramfs-tools,
 Description: deepin ports SIG profile for jh7110
 
 Package: deepin-ports-profile-sg2042
 Architecture: all
 Depends: ${misc:Depends},
+         u-boot-menu,
+         initramfs-tools,
 Description: deepin ports SIG profile for sg2042
 
 Package: deepin-ports-profile-th1520
@@ -31,6 +42,8 @@ Depends: ${misc:Depends},
          aic8800-firmware,
          rtl8723ds-firmware,
          deepin-ports-profile-gpu-ddk117,
+         u-boot-menu,
+         initramfs-tools,
 Description: deepin ports SIG profile for th1520
 
 Package: deepin-ports-profile-k1
@@ -45,6 +58,8 @@ Package: deepin-ports-profile-eic7700
 Architecture: all
 Depends: ${misc:Depends},
          deepin-ports-profile-gpu-ddk242,
+         u-boot-menu,
+         initramfs-tools,
 Description: deepin ports SIG profile for eic7700
 
 Package: deepin-ports-profile-gpu-ddk117
