@@ -1,3 +1,10 @@
+deepin-ports-profiles (2025.02.24) unstable; urgency=medium
+
+  * use ddk242 for eic7700
+  * use ddk118 mesa for eic7700 (temporary)
+
+ -- Chang Yang <yangchang@deepin.org>  Mon, 24 Feb 2025 15:19:54 +0800
+
 deepin-ports-profiles (2025.01.21) unstable; urgency=medium
 
   * fix for wayland and x11 env

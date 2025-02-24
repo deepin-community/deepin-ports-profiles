@@ -44,7 +44,7 @@ Description: deepin ports SIG profile for k1
 Package: deepin-ports-profile-eic7700
 Architecture: all
 Depends: ${misc:Depends},
-         deepin-ports-profile-gpu-ddk118,
+         deepin-ports-profile-gpu-ddk242,
 Description: deepin ports SIG profile for eic7700
 
 Package: deepin-ports-profile-gpu-ddk117
@@ -94,3 +94,15 @@ Depends: ${misc:Depends},
          libglapi-pvr-ddk232,
          xserver-xorg-video-pvrdri,
 Description: deepin ports SIG profile for GPU DDK232
+
+Package: deepin-ports-profile-gpu-ddk242
+Architecture: all
+Depends: ${misc:Depends},
+         firmware-imggpu-ddk242,
+         img-gpu-bin-ddk242,
+         libegl-pvr0-ddk118,
+         libgbm1-pvr-ddk118,
+         libgl1-pvr-dri-ddk118,
+         libglapi-pvr-ddk118,
+         xserver-xorg-video-pvrdri,
+Description: deepin ports SIG profile for GPU DDK242
