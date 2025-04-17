@@ -1,3 +1,10 @@
+deepin-ports-profiles (2025.04.17.1) unstable; urgency=medium
+
+  * upgrade eic7700 to pvr 242
+  * upgrade k1 to pvr 242
+
+ -- Chang Yang <yangchang@deepin.org>  Thu, 17 Apr 2025 15:58:12 +0800
+
 deepin-ports-profiles (2025.02.24.1) unstable; urgency=medium
 
   * add u-boot-menu dependency

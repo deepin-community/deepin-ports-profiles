@@ -51,13 +51,13 @@ Architecture: all
 Depends: ${misc:Depends},
          spacemit-uart-bt,
          spacemit-flash-dtbs,
-         deepin-ports-profile-gpu-ddk232,
+         deepin-ports-profile-gpu-ddk242-k1,
 Description: deepin ports SIG profile for k1
 
 Package: deepin-ports-profile-eic7700
 Architecture: all
 Depends: ${misc:Depends},
-         deepin-ports-profile-gpu-ddk242,
+         deepin-ports-profile-gpu-ddk242-eic7700,
          u-boot-menu,
          initramfs-tools,
 Description: deepin ports SIG profile for eic7700
@@ -74,18 +74,6 @@ Depends: ${misc:Depends},
          xserver-xorg-video-pvrdri,
 Description: deepin ports SIG profile for GPU DDK117
 
-Package: deepin-ports-profile-gpu-ddk118
-Architecture: all
-Depends: ${misc:Depends},
-         firmware-imggpu-ddk118,
-         img-gpu-bin-ddk118,
-         libegl-pvr0-ddk118,
-         libgbm1-pvr-ddk118,
-         libgl1-pvr-dri-ddk118,
-         libglapi-pvr-ddk118,
-         xserver-xorg-video-pvrdri,
-Description: deepin ports SIG profile for GPU DDK118
-
 Package: deepin-ports-profile-gpu-ddk119
 Architecture: all
 Depends: ${misc:Depends},
@@ -98,26 +86,26 @@ Depends: ${misc:Depends},
          xserver-xorg-video-pvrdri,
 Description: deepin ports SIG profile for GPU DDK119
 
-Package: deepin-ports-profile-gpu-ddk232
+Package: deepin-ports-profile-gpu-ddk242-k1
 Architecture: all
 Depends: ${misc:Depends},
-         firmware-imggpu-ddk232,
-         img-gpu-bin-ddk232,
-         libegl-pvr0-ddk232,
-         libgbm1-pvr-ddk232,
-         libgl1-pvr-dri-ddk232,
-         libglapi-pvr-ddk232,
+         firmware-imggpu-ddk242-k1,
+         img-gpu-bin-ddk242-k1,
+         libegl-pvr0-ddk242,
+         libgbm1-pvr-ddk242,
+         libgl1-pvr-dri-ddk242,
+         libglapi-pvr-ddk242,
          xserver-xorg-video-pvrdri,
-Description: deepin ports SIG profile for GPU DDK232
+Description: deepin ports SIG profile for GPU DDK242 (K1)
 
-Package: deepin-ports-profile-gpu-ddk242
+Package: deepin-ports-profile-gpu-ddk242-eic7700
 Architecture: all
 Depends: ${misc:Depends},
-         firmware-imggpu-ddk242,
-         img-gpu-bin-ddk242,
-         libegl-pvr0-ddk118,
-         libgbm1-pvr-ddk118,
-         libgl1-pvr-dri-ddk118,
-         libglapi-pvr-ddk118,
+         firmware-imggpu-ddk242-eic7700,
+         img-gpu-bin-ddk242-eic7700,
+         libegl-pvr0-ddk242,
+         libgbm1-pvr-ddk242,
+         libgl1-pvr-dri-ddk242,
+         libglapi-pvr-ddk242,
          xserver-xorg-video-pvrdri,
-Description: deepin ports SIG profile for GPU DDK242
+Description: deepin ports SIG profile for GPU DDK242 (EIC7700)
