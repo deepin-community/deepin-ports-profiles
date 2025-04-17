@@ -7,6 +7,14 @@ Build-Depends: debhelper (>= 8.0.0),
 Standards-Version: 3.9.3
 Homepage: https://github.com/deepin-community/deepin-ports-profiles
 
+Package: deepin-ports-profile-phytiumpi
+Architecture: all
+Depends: ${misc:Depends},
+         u-boot-tools,
+         initramfs-tools,
+         phytium-e2000-drivers-vpu-all,
+Description: deepin ports SIG profile for phytiumpi
+
 Package: deepin-ports-profile-unmatched
 Architecture: all
 Depends: ${misc:Depends},

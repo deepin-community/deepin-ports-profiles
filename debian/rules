@@ -2,7 +2,7 @@
 
 PKG_PFX = deepin-ports-profile-
 
-ALL_DEVICES = eic7700 jh7110 k1 sg2042 th1520
+ALL_DEVICES = eic7700 jh7110 k1 sg2042 th1520 phytiumpi
 
 IMG_DEVICES = eic7700 jh7110 k1 th1520
 

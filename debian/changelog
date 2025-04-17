@@ -1,3 +1,9 @@
+deepin-ports-profiles (2025.04.17.2) unstable; urgency=medium
+
+  * add phytiumpi profile
+
+ -- Chang Yang <yangchang@deepin.org>  Thu, 17 Apr 2025 17:58:08 +0800
+
 deepin-ports-profiles (2025.04.17.1) unstable; urgency=medium
 
   * upgrade eic7700 to pvr 242
