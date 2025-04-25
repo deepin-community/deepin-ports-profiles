@@ -1,3 +1,9 @@
+deepin-ports-profiles (2025.04.25.1) unstable; urgency=medium
+
+  * remove phytiumpi vpu
+
+ -- Chang Yang <yangchang@deepin.org>  Fri, 25 Apr 2025 10:21:21 +0800
+
 deepin-ports-profiles (2025.04.17.2) unstable; urgency=medium
 
   * add phytiumpi profile
