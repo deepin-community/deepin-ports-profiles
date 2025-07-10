@@ -43,7 +43,6 @@ Architecture: all
 Depends: ${misc:Depends},
          xserver-xorg-video-thead,
          th1520-boot-firmware,
-         th1520-vendor-opensbi,
          th1520-npu,
          th1520-vpu,
          aic8800-firmware,
