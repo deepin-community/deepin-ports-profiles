@@ -1,3 +1,9 @@
+deepin-ports-profiles (2025.07.31.1) unstable; urgency=medium
+
+  * fix wrong copy firmware script for k1
+
+ -- Chang Yang <yangchang@deepin.org>  Thu, 31 Jul 2025 16:29:54 +0800
+
 deepin-ports-profiles (2025.06.27.1) unstable; urgency=medium
 
   * add QT_FORCE_OPENGL_TYPE for imggpu env
