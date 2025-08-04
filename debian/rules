@@ -43,7 +43,5 @@ override_dh_install:
 
 	install -Dm644 profiles/jh7110/jh7110-codecs.rules -t debian/$(PKG_PFX)jh7110/etc/udev/rules.d/
 
-	install -Dm755 profiles/k1/copy-spacemit-firmware -t debian/$(PKG_PFX)k1/etc/initramfs-tools/hooks/
-
 	install -Dm755 profiles/sg2042/sg2042-extgpu.conf -t debian/$(PKG_PFX)sg2042/etc/modprobe.d/
 	install -Dm755 profiles/sg2042/99-primarygpu.conf -t debian/$(PKG_PFX)sg2042/etc/X11/xorg.conf.d/
