@@ -66,6 +66,7 @@ Depends: ${misc:Depends},
          deepin-ports-profile-gpu-ddk242-eic7700,
          u-boot-menu,
          initramfs-tools,
+         ap12275-firmware,
 Description: deepin ports SIG profile for eic7700
 
 Package: deepin-ports-profile-gpu-ddk117
