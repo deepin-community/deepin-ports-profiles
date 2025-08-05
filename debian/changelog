@@ -1,3 +1,9 @@
+deepin-ports-profiles (2025.08.05.1) unstable; urgency=medium
+
+  * add recommends pvr vulkan drivers
+
+ -- Chang Yang <yangchang@deepin.org>  Tue, 05 Aug 2025 14:31:50 +0800
+
 deepin-ports-profiles (2025.08.04.1) unstable; urgency=medium
 
   * k1: use packaged esos file

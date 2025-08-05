@@ -78,6 +78,7 @@ Depends: ${misc:Depends},
          libgl1-pvr-dri-ddk117,
          libglapi-pvr-ddk117,
          xserver-xorg-video-pvrdri,
+Recommends: pvr-vulkan-drivers-ddk117,
 Description: deepin ports SIG profile for GPU DDK117
 
 Package: deepin-ports-profile-gpu-ddk119
@@ -90,6 +91,7 @@ Depends: ${misc:Depends},
          libgl1-pvr-dri-ddk119,
          libglapi-pvr-ddk119,
          xserver-xorg-video-pvrdri,
+Recommends: pvr-vulkan-drivers-ddk119,
 Description: deepin ports SIG profile for GPU DDK119
 
 Package: deepin-ports-profile-gpu-ddk242-k1
@@ -102,6 +104,7 @@ Depends: ${misc:Depends},
          libgl1-pvr-dri-ddk242,
          libglapi-pvr-ddk242,
          xserver-xorg-video-pvrdri,
+Recommends: pvr-vulkan-drivers-ddk242,
 Description: deepin ports SIG profile for GPU DDK242 (K1)
 
 Package: deepin-ports-profile-gpu-ddk242-eic7700
@@ -114,4 +117,5 @@ Depends: ${misc:Depends},
          libgl1-pvr-dri-ddk242,
          libglapi-pvr-ddk242,
          xserver-xorg-video-pvrdri,
+Recommends: pvr-vulkan-drivers-ddk242,
 Description: deepin ports SIG profile for GPU DDK242 (EIC7700)
