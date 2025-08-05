@@ -1,0 +1,13 @@
+[Unit]
+Before=systemd-user-sessions.service
+Wants=network-online.target
+After=network-online.target
+ConditionPathExists=!/usr/local/bin/agent
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/agent-install
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

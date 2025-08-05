@@ -1,0 +1,11 @@
+[Unit]
+Description=code-server
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/code-server --host :: --auth none --port 10089
+Restart=always
+User=deepin
+
+[Install]
+WantedBy=multi-user.target
