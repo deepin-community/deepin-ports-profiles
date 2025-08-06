@@ -1,0 +1,12 @@
+[Unit]
+Description=VNC Server
+Requires=lightdm.service
+Wants=network-online.target
+After=multi-user.target network-online.target
+
+[Service]
+Restart=on-failure
+ExecStart=/usr/bin/x11vnc -display :0 -auth "/var/run/lightdm/root/:0" -forever -loop -noxdamage -repeat -rfbport 5901 -shared
+
+[Install]
+WantedBy=multi-user.target

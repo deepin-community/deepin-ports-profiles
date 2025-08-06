@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl -L "https://cloudfile.spacemit.com/resource/install_agent.sh" | bash

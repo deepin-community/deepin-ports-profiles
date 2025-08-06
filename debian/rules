@@ -45,3 +45,13 @@ override_dh_install:
 
 	install -Dm755 profiles/sg2042/sg2042-extgpu.conf -t debian/$(PKG_PFX)sg2042/etc/modprobe.d/
 	install -Dm755 profiles/sg2042/99-primarygpu.conf -t debian/$(PKG_PFX)sg2042/etc/X11/xorg.conf.d/
+
+	install -Dm755 profiles/k1-cloud/agent-install -t debian/$(PKG_PFX)k1-cloud/usr/bin/
+	install -Dm755 profiles/k1-cloud/agent-install.service -t debian/$(PKG_PFX)k1-cloud/usr/lib/systemd/system/
+	install -Dm644 profiles/k1-cloud/x11vnc.service -t debian/$(PKG_PFX)k1-cloud/usr/lib/systemd/system/
+	install -Dm644 profiles/k1-cloud/sudo-cloud -t debian/$(PKG_PFX)k1-cloud/etc/sudoers.d/
+	install -Dm644 profiles/k1-cloud/autologin.conf -t debian/$(PKG_PFX)k1-cloud/etc/lightdm/lightdm.conf.d/
+	install -Dm644 profiles/k1-cloud/code-oss-server.service -t debian/$(PKG_PFX)k1-cloud/usr/lib/systemd/system/
+	install -Dm755 profiles/k1-cloud/disable-lock.sh -t debian/$(PKG_PFX)k1-cloud/etc/profile.d/
+	install -Dm644 profiles/k1-cloud/99-dummyscreen.conf -t debian/$(PKG_PFX)k1-cloud/etc/X11/xorg.conf.d
+	install -Dm644 profiles/k1-cloud/state_user -t debian/$(PKG_PFX)k1-cloud/var/lib/lightdm/lightdm-deepin-greeter

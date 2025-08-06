@@ -1,10 +1,9 @@
 Source: deepin-ports-profiles
-Section: metapackages
-Priority: standard
+Section: misc
+Priority: optional
 Maintainer: LinuxDeepin Project <linuxdeepin@linuxdeepin.com>
-Build-Depends: debhelper (>= 8.0.0),
-               debhelper-compat (= 13),
-Standards-Version: 3.9.3
+Build-Depends: debhelper-compat (= 13),
+Standards-Version: 4.6.2
 Homepage: https://github.com/deepin-community/deepin-ports-profiles
 
 Package: deepin-ports-profile-phytiumpi
@@ -59,6 +58,19 @@ Depends: ${misc:Depends},
          spacemit-flash-dtbs,
          deepin-ports-profile-gpu-ddk242-k1,
 Description: deepin ports SIG profile for k1
+
+Package: deepin-ports-profile-k1-cloud
+Architecture: all
+Depends: ${misc:Depends},
+         deepin-ports-profile-k1,
+         x11vnc,
+         openssh-server,
+         net-tools,
+         code-server,
+         wget,
+         dconf-cli,
+         xserver-xorg-video-dummy,
+Description: deepin ports SIG profile for k1-cloud
 
 Package: deepin-ports-profile-eic7700
 Architecture: all
