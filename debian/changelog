@@ -1,3 +1,9 @@
+deepin-ports-profiles (2025.08.14.1) unstable; urgency=medium
+
+  * add u-boot configs
+
+ -- Chang Yang <yangchang@deepin.org>  Thu, 14 Aug 2025 13:58:13 +0800
+
 deepin-ports-profiles (2025.08.05.2) unstable; urgency=medium
 
   * add ap12275-firmware to eic7700 preinstall

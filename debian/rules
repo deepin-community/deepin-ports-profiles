@@ -37,6 +37,13 @@ override_dh_install:
 		fi; \
 	done
 
+	for pf in eic7700 jh7110 th1520 unmatched ; do \
+		install -Dm644 uboot/00-common.conf -t debian/$(PKG_PFX)$$pf/usr/share/u-boot-menu/conf.d/; \
+	done
+	for pf in eic7700 jh7110 th1520 unmatched sg2042 ; do \
+		install -Dm644 uboot/55-$$pf.conf -t debian/$(PKG_PFX)$$pf/usr/share/u-boot-menu/conf.d/; \
+	done
+
 	install -Dm644 profiles/eic7700/fix-eth.conf -t debian/$(PKG_PFX)eic7700/etc/modprobe.d/
 	install -Dm644 profiles/eic7700/99-fix-gamma.conf -t debian/$(PKG_PFX)eic7700/etc/X11/xorg.conf.d/
 	install -Dm644 profiles/eic7700/eswin-codecs.rules -t debian/$(PKG_PFX)eic7700/etc/udev/rules.d/
