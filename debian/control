@@ -35,6 +35,7 @@ Architecture: all
 Depends: ${misc:Depends},
          u-boot-menu,
          initramfs-tools,
+         mtd-utils,
 Description: deepin ports SIG profile for sg2042
 
 Package: deepin-ports-profile-th1520

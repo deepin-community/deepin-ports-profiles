@@ -1,3 +1,9 @@
+deepin-ports-profiles (2025.09.01.1) unstable; urgency=medium
+
+  * add mtd-utils for sg2042
+
+ -- Chang Yang <yangchang@deepin.org>  Mon, 01 Sep 2025 14:12:38 +0800
+
 deepin-ports-profiles (2025.08.22.1) unstable; urgency=medium
 
   * th1520: remove unused hidev0p7 boot arg
