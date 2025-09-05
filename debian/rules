@@ -2,7 +2,7 @@
 
 PKG_PFX = deepin-ports-profile-
 
-ALL_DEVICES = eic7700 jh7110 k1 sg2042 th1520 phytiumpi
+ALL_DEVICES = eic7700 jh7110 k1 sg2042 th1520 phytiumpi q6a
 
 IMG_DEVICES = eic7700 jh7110 k1 th1520
 
@@ -52,6 +52,8 @@ override_dh_install:
 
 	install -Dm755 profiles/sg2042/sg2042-extgpu.conf -t debian/$(PKG_PFX)sg2042/etc/modprobe.d/
 	install -Dm755 profiles/sg2042/99-primarygpu.conf -t debian/$(PKG_PFX)sg2042/etc/X11/xorg.conf.d/
+
+	install -Dm755 profiles/q6a/adreno -t debian/$(PKG_PFX)q6a/usr/share/initramfs-tools/hooks/
 
 	install -Dm755 profiles/k1-cloud/agent-install -t debian/$(PKG_PFX)k1-cloud/usr/bin/
 	install -Dm755 profiles/k1-cloud/agent-install.service -t debian/$(PKG_PFX)k1-cloud/usr/lib/systemd/system/

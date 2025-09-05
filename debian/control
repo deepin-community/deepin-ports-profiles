@@ -82,6 +82,13 @@ Depends: ${misc:Depends},
          ap12275-firmware,
 Description: deepin ports SIG profile for eic7700
 
+Package: deepin-ports-profile-q6a
+Architecture: all
+Depends: ${misc:Depends},
+         initramfs-tools,
+         grub-efi,
+Description: deepin ports SIG profile for q6a
+
 Package: deepin-ports-profile-gpu-ddk117
 Architecture: all
 Depends: ${misc:Depends},
