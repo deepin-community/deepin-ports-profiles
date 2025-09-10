@@ -87,6 +87,8 @@ Architecture: all
 Depends: ${misc:Depends},
          initramfs-tools,
          grub-efi,
+         aic8800-firmware,
+         aic8800-usb-dkms,
 Description: deepin ports SIG profile for q6a
 
 Package: deepin-ports-profile-gpu-ddk117
