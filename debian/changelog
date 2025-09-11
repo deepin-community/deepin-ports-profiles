@@ -1,3 +1,9 @@
+deepin-ports-profiles (2025.09.11.1) unstable; urgency=medium
+
+  * q6a: add btusb config
+
+ -- Chang Yang <yangchang@deepin.org>  Thu, 11 Sep 2025 14:00:52 +0800
+
 deepin-ports-profiles (2025.09.10.1) unstable; urgency=medium
 
   * q6a: add aic8800 driver
