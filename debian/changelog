@@ -1,3 +1,9 @@
+deepin-ports-profiles (2025.09.19.1) unstable; urgency=medium
+
+  * q6a: add alsa config
+
+ -- Chang Yang <yangchang@deepin.org>  Fri, 19 Sep 2025 14:40:27 +0800
+
 deepin-ports-profiles (2025.09.11.1) unstable; urgency=medium
 
   * q6a: add btusb config

@@ -89,6 +89,7 @@ Depends: ${misc:Depends},
          grub-efi,
          aic8800-firmware,
          aic8800-usb-dkms,
+         radxa-alsa-config,
 Description: deepin ports SIG profile for q6a
 
 Package: deepin-ports-profile-gpu-ddk117
