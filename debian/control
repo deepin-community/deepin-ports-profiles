@@ -92,6 +92,19 @@ Depends: ${misc:Depends},
          radxa-alsa-config,
 Description: deepin ports SIG profile for q6a
 
+Package: deepin-ports-profile-cix-p1
+Architecture: all
+Depends: ${misc:Depends},
+         initramfs-tools,
+         grub-efi,
+         cix-env,
+         cix-firmware,
+         cix-gpu-driver,
+         cix-gpu-umd,
+         cix-libglvnd,
+         cix-mesa,
+Description: deepin ports SIG profile for cix-p1
+
 Package: deepin-ports-profile-gpu-ddk117
 Architecture: all
 Depends: ${misc:Depends},
