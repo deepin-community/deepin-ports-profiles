@@ -40,7 +40,7 @@ override_dh_install:
 	for pf in eic7700 jh7110 th1520 unmatched ; do \
 		install -Dm644 uboot/00-common.conf -t debian/$(PKG_PFX)$$pf/usr/share/u-boot-menu/conf.d/; \
 	done
-	for pf in eic7700 jh7110 th1520 unmatched sg2042 ; do \
+	for pf in eic7700 jh7110 th1520 unmatched sg2042 rockchip ; do \
 		install -Dm644 uboot/55-$$pf.conf -t debian/$(PKG_PFX)$$pf/usr/share/u-boot-menu/conf.d/; \
 	done
 

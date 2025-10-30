@@ -1,3 +1,9 @@
+deepin-ports-profiles (2025.10.30.4) unstable; urgency=medium
+
+  * rockchip: add uboot config
+
+ -- Chang Yang <yangchang@deepin.org>  Thu, 30 Oct 2025 14:28:02 +0800
+
 deepin-ports-profiles (2025.10.30.3) unstable; urgency=medium
 
   * rockchip: mask deepin anything instead
