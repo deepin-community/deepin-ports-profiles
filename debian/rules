@@ -67,3 +67,4 @@ override_dh_install:
 	install -Dm644 profiles/k1-cloud/state_user -t debian/$(PKG_PFX)k1-cloud/var/lib/lightdm/lightdm-deepin-greeter
 
 	install -Dm755 profiles/rockchip/copy-gpu-firmware -t debian/$(PKG_PFX)rockchip/etc/initramfs-tools/hooks/
+	install -Dm644 profiles/rockchip/blacklist-anything.conf -t debian/$(PKG_PFX)rockchip/etc/modprobe.d/
