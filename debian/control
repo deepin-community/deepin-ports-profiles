@@ -105,6 +105,18 @@ Depends: ${misc:Depends},
          cix-mesa,
 Description: deepin ports SIG profile for cix-p1
 
+Package: deepin-ports-profile-rockchip
+Architecture: all
+Depends: ${misc:Depends},
+         initramfs-tools,
+         u-boot-menu,
+         gstreamer1.0-rockchip1,
+         librga2,
+         librockchip-mpp1,
+         librockchip-vpu0,
+         rockchip-mpp-demos,
+Description: deepin ports SIG profile for rockchip
+
 Package: deepin-ports-profile-gpu-ddk117
 Architecture: all
 Depends: ${misc:Depends},

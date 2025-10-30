@@ -1,3 +1,9 @@
+deepin-ports-profiles (2025.10.30.1) unstable; urgency=medium
+
+  * add profile for rockchip
+
+ -- Chang Yang <yangchang@deepin.org>  Thu, 30 Oct 2025 09:45:18 +0800
+
 deepin-ports-profiles (2025.10.27.1) unstable; urgency=medium
 
   * add cix p1 profiles

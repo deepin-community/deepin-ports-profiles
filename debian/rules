@@ -2,7 +2,7 @@
 
 PKG_PFX = deepin-ports-profile-
 
-ALL_DEVICES = eic7700 jh7110 k1 sg2042 th1520 phytiumpi q6a cix-p1
+ALL_DEVICES = eic7700 jh7110 k1 sg2042 th1520 phytiumpi q6a cix-p1 rockchip
 
 IMG_DEVICES = eic7700 jh7110 k1 th1520
 
@@ -65,3 +65,5 @@ override_dh_install:
 	install -Dm755 profiles/k1-cloud/disable-lock.sh -t debian/$(PKG_PFX)k1-cloud/etc/profile.d/
 	install -Dm644 profiles/k1-cloud/99-dummyscreen.conf -t debian/$(PKG_PFX)k1-cloud/etc/X11/xorg.conf.d
 	install -Dm644 profiles/k1-cloud/state_user -t debian/$(PKG_PFX)k1-cloud/var/lib/lightdm/lightdm-deepin-greeter
+
+	install -Dm755 profiles/rockchip/copy-gpu-firmware -t debian/$(PKG_PFX)rockchip/etc/initramfs-tools/hooks/
