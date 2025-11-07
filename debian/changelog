@@ -1,3 +1,9 @@
+deepin-ports-profiles (2025.11.06.2) unstable; urgency=medium
+
+  * a733: add profile
+
+ -- Chang Yang <yangchang@deepin.org>  Thu, 06 Nov 2025 18:51:41 +0800
+
 deepin-ports-profiles (2025.10.30.4) unstable; urgency=medium
 
   * rockchip: add uboot config

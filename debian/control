@@ -117,6 +117,15 @@ Depends: ${misc:Depends},
          rockchip-mpp-demos,
 Description: deepin ports SIG profile for rockchip
 
+Package: deepin-ports-profile-a733
+Architecture: all
+Depends: ${misc:Depends},
+         initramfs-tools,
+         u-boot-menu,
+         aic8800-usb-dkms,
+         aic8800-firmware,
+Description: deepin ports SIG profile for allwinner a733
+
 Package: deepin-ports-profile-gpu-ddk117
 Architecture: all
 Depends: ${misc:Depends},
