@@ -69,3 +69,6 @@ override_dh_install:
 	install -Dm755 profiles/rockchip/copy-gpu-firmware -t debian/$(PKG_PFX)rockchip/etc/initramfs-tools/hooks/
 	install -d debian/$(PKG_PFX)rockchip/etc/systemd/system/
 	ln -s /dev/null debian/$(PKG_PFX)rockchip/etc/systemd/system/deepin-anything-server.service
+
+	mkdir -p debian/$(PKG_PFX)a733/lib/firmware
+	ln -s aic8800_fw/USB/aic8800D80 debian/$(PKG_PFX)a733/lib/firmware/aic8800D80

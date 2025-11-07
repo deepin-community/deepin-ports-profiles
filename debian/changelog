@@ -1,3 +1,9 @@
+deepin-ports-profiles (2025.11.06.4) unstable; urgency=medium
+
+  * a733: fix aic8800 firmware path
+
+ -- Chang Yang <yangchang@deepin.org>  Fri, 07 Nov 2025 11:29:06 +0800
+
 deepin-ports-profiles (2025.11.06.3) unstable; urgency=medium
 
   * a733: add img bxm dkms driver
