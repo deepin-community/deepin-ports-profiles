@@ -124,6 +124,7 @@ Depends: ${misc:Depends},
          u-boot-menu,
          aic8800-usb-dkms,
          aic8800-firmware,
+         img-bxm-dkms,
 Description: deepin ports SIG profile for allwinner a733
 
 Package: deepin-ports-profile-gpu-ddk117
