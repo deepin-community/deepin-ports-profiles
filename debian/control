@@ -125,6 +125,7 @@ Depends: ${misc:Depends},
          aic8800-usb-dkms,
          aic8800-firmware,
          img-bxm-dkms,
+         deepin-ports-profile-gpu-ddk242-a733,
 Description: deepin ports SIG profile for allwinner a733
 
 Package: deepin-ports-profile-gpu-ddk117
@@ -178,3 +179,16 @@ Depends: ${misc:Depends},
          xserver-xorg-video-pvrdri,
 Recommends: pvr-vulkan-drivers-ddk242,
 Description: deepin ports SIG profile for GPU DDK242 (EIC7700)
+
+Package: deepin-ports-profile-gpu-ddk242-a733
+Architecture: all
+Depends: ${misc:Depends},
+         firmware-imggpu-ddk242-a733,
+         img-gpu-bin-ddk242-a733,
+         libegl-pvr0-ddk242,
+         libgbm1-pvr-ddk242,
+         libgl1-pvr-dri-ddk242,
+         libglapi-pvr-ddk242,
+         xserver-xorg-video-pvrdri,
+Recommends: pvr-vulkan-drivers-ddk242,
+Description: deepin ports SIG profile for GPU DDK242 (A733)

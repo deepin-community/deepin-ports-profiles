@@ -2,11 +2,11 @@
 
 PKG_PFX = deepin-ports-profile-
 
-ALL_DEVICES = eic7700 jh7110 k1 sg2042 th1520 phytiumpi q6a cix-p1 rockchip
+ALL_DEVICES = eic7700 jh7110 k1 sg2042 th1520 phytiumpi q6a cix-p1 rockchip a733
 
-IMG_DEVICES = eic7700 jh7110 k1 th1520
+IMG_DEVICES = eic7700 jh7110 k1 th1520 a733
 
-IMG_DDK_LIST = 117 119 242-k1 242-eic7700
+IMG_DDK_LIST = 117 119 242-k1 242-eic7700 242-a733
 
 %:
 	dh $@
@@ -25,7 +25,7 @@ override_dh_install:
 
 	for pf in $(IMG_DEVICES) ; do \
 		install -Dm644 imggpu/99-imggpu-xorg.conf.in debian/$(PKG_PFX)$$pf/etc/X11/xorg.conf.d/99-imggpu-xorg.conf; \
-		if [ "$$pf" = "eic7700" ] || [ "$$pf" = "th1520" ]; then \
+		if [ "$$pf" = "eic7700" ] || [ "$$pf" = "th1520" ] || [ "$$pf" = "a733" ]; then \
 			sed -i 's@KMSDEV@/dev/dri/card0@' debian/$(PKG_PFX)$$pf/etc/X11/xorg.conf.d/99-imggpu-xorg.conf; \
 		else \
 			sed -i 's@KMSDEV@/dev/dri/card1@' debian/$(PKG_PFX)$$pf/etc/X11/xorg.conf.d/99-imggpu-xorg.conf; \
