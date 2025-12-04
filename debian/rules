@@ -2,7 +2,7 @@
 
 PKG_PFX = deepin-ports-profile-
 
-ALL_DEVICES = eic7700 jh7110 k1 sg2042 th1520 phytiumpi q6a cix-p1 rockchip a733
+ALL_DEVICES = eic7700 jh7110 k1 sg2042 sg2044 th1520 phytiumpi q6a cix-p1 rockchip a733
 
 IMG_DEVICES = eic7700 jh7110 k1 th1520 a733
 
@@ -40,7 +40,7 @@ override_dh_install:
 	for pf in eic7700 jh7110 th1520 unmatched ; do \
 		install -Dm644 uboot/00-common.conf -t debian/$(PKG_PFX)$$pf/usr/share/u-boot-menu/conf.d/; \
 	done
-	for pf in eic7700 jh7110 th1520 unmatched sg2042 rockchip a733 ; do \
+	for pf in eic7700 jh7110 th1520 unmatched sg2042 2044 rockchip a733 ; do \
 		install -Dm644 uboot/55-$$pf.conf -t debian/$(PKG_PFX)$$pf/usr/share/u-boot-menu/conf.d/; \
 	done
 
