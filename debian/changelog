@@ -1,3 +1,9 @@
+deepin-ports-profiles (2025.12.18.1) unstable; urgency=medium
+
+  * fix typo
+
+ -- Chang Yang <yangchang@deepin.org>  Thu, 18 Dec 2025 14:22:47 +0800
+
 deepin-ports-profiles (2025.12.04.1) unstable; urgency=medium
 
   * add sg2044
