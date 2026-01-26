@@ -97,7 +97,6 @@ Depends: ${misc:Depends},
          grub-efi,
          aic8800-firmware,
          aic8800-usb-dkms,
-         radxa-alsa-config,
 Description: deepin ports SIG profile for q6a
 
 Package: deepin-ports-profile-cix-p1
@@ -200,3 +199,12 @@ Depends: ${misc:Depends},
          xserver-xorg-video-pvrdri,
 Recommends: pvr-vulkan-drivers-ddk242,
 Description: deepin ports SIG profile for GPU DDK242 (A733)
+
+Package: deepin-ports-profile-demo
+Architecture: all
+Depends: supertux,
+         supertuxkart,
+         openjdk-21-jre,
+         cool-retro-term,
+         cataclysm-dda,
+Description: deepin ports SIG profile for demo
