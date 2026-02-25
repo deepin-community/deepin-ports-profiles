@@ -73,6 +73,7 @@ Architecture: all
 Depends: ${misc:Depends},
          spacemit-flash-dtbs,
          bianbu-esos,
+         deepin-ports-profile-gpu-ddk242-k3,
 Description: deepin ports SIG profile for k3
 
 Package: deepin-ports-profile-k1-cloud
