@@ -1,3 +1,10 @@
+deepin-ports-profiles (2026.02.25.2) unstable; urgency=medium
+
+  * add bianbu-esos on k3
+  * add gpu support for k3
+
+ -- Chang Yang <yangchang@deepin.org>  Wed, 25 Feb 2026 15:06:44 +0800
+
 deepin-ports-profiles (2026.02.25.1) unstable; urgency=medium
 
   * add spacemit k3

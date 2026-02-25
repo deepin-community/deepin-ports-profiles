@@ -4,9 +4,9 @@ PKG_PFX = deepin-ports-profile-
 
 ALL_DEVICES = eic7700 jh7110 k1 k1-cloud k3 sg2042 sg2044 th1520 phytiumpi q6a cix-p1 rockchip a733
 
-IMG_DEVICES = eic7700 jh7110 k1 th1520 a733
+IMG_DEVICES = eic7700 jh7110 k1 k3 th1520 a733
 
-IMG_DDK_LIST = 117 119 242-k1 242-eic7700 242-a733
+IMG_DDK_LIST = 117 119 242-k1 242-k3 242-eic7700 242-a733
 
 %:
 	dh $@

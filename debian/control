@@ -72,6 +72,7 @@ Package: deepin-ports-profile-k3
 Architecture: all
 Depends: ${misc:Depends},
          spacemit-flash-dtbs,
+         bianbu-esos,
 Description: deepin ports SIG profile for k3
 
 Package: deepin-ports-profile-k1-cloud
@@ -179,6 +180,19 @@ Depends: ${misc:Depends},
          xserver-xorg-video-pvrdri,
 Recommends: pvr-vulkan-drivers-ddk242,
 Description: deepin ports SIG profile for GPU DDK242 (K1)
+
+Package: deepin-ports-profile-gpu-ddk242-k3
+Architecture: all
+Depends: ${misc:Depends},
+         firmware-imggpu-ddk242-k3,
+         img-gpu-bin-ddk242-k3,
+         libegl-pvr0-ddk242,
+         libgbm1-pvr-ddk242,
+         libgl1-pvr-dri-ddk242,
+         libglapi-pvr-ddk242,
+         xserver-xorg-video-pvrdri,
+Recommends: pvr-vulkan-drivers-ddk242,
+Description: deepin ports SIG profile for GPU DDK242 (K3)
 
 Package: deepin-ports-profile-gpu-ddk242-eic7700
 Architecture: all
