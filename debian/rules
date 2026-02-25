@@ -2,7 +2,7 @@
 
 PKG_PFX = deepin-ports-profile-
 
-ALL_DEVICES = eic7700 jh7110 k1 sg2042 sg2044 th1520 phytiumpi q6a cix-p1 rockchip a733
+ALL_DEVICES = eic7700 jh7110 k1 k1-cloud k3 sg2042 sg2044 th1520 phytiumpi q6a cix-p1 rockchip a733
 
 IMG_DEVICES = eic7700 jh7110 k1 th1520 a733
 
@@ -55,6 +55,9 @@ override_dh_install:
 
 	install -Dm755 profiles/q6a/adreno -t debian/$(PKG_PFX)q6a/usr/share/initramfs-tools/hooks/
 	install -Dm644 profiles/q6a/aic-btusb-dkms.conf -t debian/$(PKG_PFX)q6a/etc/modprobe.d/
+
+	install -Dm644 profiles/k1/bt-init.service -t debian/$(PKG_PFX)k1/usr/lib/systemd/system/
+	install -Dm755 profiles/k1/realtek_bt.sh -t debian/$(PKG_PFX)k1/usr/bin/
 
 	install -Dm755 profiles/k1-cloud/agent-install -t debian/$(PKG_PFX)k1-cloud/usr/bin/
 	install -Dm755 profiles/k1-cloud/agent-install.service -t debian/$(PKG_PFX)k1-cloud/usr/lib/systemd/system/

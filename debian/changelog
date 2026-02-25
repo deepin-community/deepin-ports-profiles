@@ -1,3 +1,9 @@
+deepin-ports-profiles (2026.02.25.1) unstable; urgency=medium
+
+  * add spacemit k3
+
+ -- Chang Yang <yangchang@deepin.org>  Wed, 25 Feb 2026 10:40:47 +0800
+
 deepin-ports-profiles (2026.01.26.1) unstable; urgency=medium
 
   * remove radxa-alsa-config from q6a profile

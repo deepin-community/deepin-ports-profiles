@@ -68,6 +68,12 @@ Depends: ${misc:Depends},
          deepin-ports-profile-gpu-ddk242-k1,
 Description: deepin ports SIG profile for k1
 
+Package: deepin-ports-profile-k3
+Architecture: all
+Depends: ${misc:Depends},
+         spacemit-flash-dtbs,
+Description: deepin ports SIG profile for k3
+
 Package: deepin-ports-profile-k1-cloud
 Architecture: all
 Depends: ${misc:Depends},
